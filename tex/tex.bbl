@@ -1,0 +1,51 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{grund1979forsythe}{article}{}
+      \name{author}{1}{}{%
+        {{hash=30f20436c56a1582f1b61f1017a5a14c}{%
+           family={Grund},
+           familyi={G\bibinitperiod},
+           given={F},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{30f20436c56a1582f1b61f1017a5a14c}
+      \strng{fullhash}{30f20436c56a1582f1b61f1017a5a14c}
+      \strng{bibnamehash}{30f20436c56a1582f1b61f1017a5a14c}
+      \strng{authorbibnamehash}{30f20436c56a1582f1b61f1017a5a14c}
+      \strng{authornamehash}{30f20436c56a1582f1b61f1017a5a14c}
+      \strng{authorfullhash}{30f20436c56a1582f1b61f1017a5a14c}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ZaMM}
+      \field{number}{2}
+      \field{title}{Forsythe, GE/Malcolm, MA/Moler, CB, Computer Methods for Mathematical Computations. Englewood Cliffs, New Jersey 07632. Prentice Hall, Inc., 1977. XI, 259 S}
+      \field{volume}{59}
+      \field{year}{1979}
+      \field{pages}{141\bibrangedash 142}
+      \range{pages}{2}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

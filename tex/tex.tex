@@ -8,6 +8,7 @@
 \usepackage{graphicx}
 \usepackage{wrapfig}
 \usepackage{lscape}
+\usepackage{biblatex}
 
 \usepackage{hyperref}
 \usepackage[rgb]{xcolor}
@@ -27,6 +28,7 @@
 \usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} 
 \DeclarePairedDelimiter\abs{\lvert}{\rvert}%
 
+\addbibresource{tex.bib}
 
 \usepackage{wasysym}
 
@@ -147,7 +149,6 @@ p(\varepsilon_0) = p_0
 
 Уравнения явно не решается аналитически. Но несложно показать, что функция $p(\varepsilon)$ монотонна, а интервал изменения $\varepsilon$ известен и невелик, откуда следует, что уравнени легко решается численно даже самыми простейшими методами вроде деления отрезка пополам. В примерах использован алгоритм, реулизованный в функции $fzero$ в Matlab и описанный в \cite{grund1979forsythe}
 
-Forsythe, G. E., M. A. Malcolm, and C. B. Moler, Computer Methods for Mathematical Computations, Prentice-Hall, 1976.
 
 Очевидно, что
 
@@ -195,10 +196,12 @@ Forsythe, G. E., M. A. Malcolm, and C. B. Moler, Computer Methods for Mathematic
 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[width=1\textwidth]{./pics/linear}
+\includegraphics[width=0.8\textwidth]{./pics/linear}
 \end{center}
 \caption{$\varepsilon(N)$} \label{img:linear}
 \end{figure}
+
+\newpage
 
 На глаз зависимость на рис.(\ref{img:linear}) близка к $1/N$, что ожидаемо, т.к. погрешность в основном определяется минимальным расстояние до границы, которое при выбранной расстановке точек убывает как $1/N$. 
 
@@ -212,5 +215,9 @@ Forsythe, G. E., M. A. Malcolm, and C. B. Moler, Computer Methods for Mathematic
 \end{figure}
 
 Видно, что наклон с правда близок к $-1$, но небольшие отклонения от линейности есть.
+
+\newpage
+
+\printbibliography
 
 \end{document} % конец документа
