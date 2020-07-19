@@ -5,7 +5,7 @@ x2 = 0.5;
 x0 = [0.22, 0.3, 0.35, 0.4, 0.43];
 x0 = [0.28, 0.3, 0.35, 0.4, 0.43];
 Nx = 1000;
-s = 0.04;
+s = 0.1;
 
 Np = length(x0);
 x = linspace(x1, x2, Nx);
@@ -19,8 +19,6 @@ for i = 1:Np
 end
 ylim([0, ymax * 1.1]);
 legend off;
-
-disp(x0);
 
 function p = g(x, x0, s)
     p = exp(-((x - x0) / s).^2 / 2)/(s * sqrt(2*pi));
