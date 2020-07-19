@@ -204,6 +204,64 @@ p(\varepsilon_0) = p_0
 
 \newpage
 
+\section{Описание и рекомендации к программе}
+
+Для удобства применения изложенного метода создана программа, позволяющее получить оценку погрешности для любого заданного набора экспериментов.
+
+Окно программы выглядит так:
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=1\textwidth]{./pics/whole_window_nums}
+\end{center}
+\caption{Окно программы. 1,2 -- границы анализируемого интервала. 3 -- априорная минимально допустимая погрешность. 4 -- степень доверия эксперименту. 5 -- имеющиеся результаты работы программы. 6 -- сделать расчет с введенными данными.} \label{img:whole_window}
+\end{figure}
+
+\newpage
+
+Поясним, что изображено на рисунках:
+
+\subsection{Исследуемый интервал, ввод имеющихся данных}
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=1\textwidth]{./pics/whole_window_interval}
+\end{center}
+\caption{Значения полей 1 и 2 -- значения $a$ и $b$, т.е. границ исследуемного интервала.} \label{img:whole_interval}
+\end{figure}
+
+\newpage
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=1\textwidth]{./pics/whole_window_interval2}
+\end{center}
+\caption{Таблица 5 -- имеющиеся ответы программы.} \label{img:whole_interval2}
+\end{figure}
+
+\newpage
+
+\subsection{Основной рисунок}
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=1\textwidth]{./pics/whole_window_34}
+\end{center}
+\caption{Поле 3 -- априорное значение минимально допустимой погрешности. Оно задается по соображениям пользователя исходя из сторонней информации. Поле 4 -- степень доверия эксперименту. Если мы уверены в эксперименте на 95\% -- пишем 0.95. Основная задача программы состоит в использовании этой величины -- по точкам 5 и интервалу 1,2 программа строит голубую кривую и находит тот Х (т.е. тот $\varepsilon$), при котором кривая принимает значение в поле 4 (т.е. вероятность реализации эксперимента совпадает с нашими ожиданиями).} 
+\label{img:whole_34}
+\end{figure}
+
+\newpage
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=1\textwidth]{./pics/whole_window_numsLeg}
+\end{center}
+\caption{Описание легенды. 1 -- зависимость вероятности реализации имеющейся совокупонсти экспериментов от предполагаемой погрешности предсказаний. 2 -- априорно заданная минимальная погрешность. 3 -- минимальное расстояние от заданного множества точек до блжайшей границы интервала. 4 -- степень доверия эксперименту. \fbox{5 -- ответ программы}, получанная оценка погрешности предсказаний.} \label{img:whole_numsLeg}
+\end{figure}
+
+\newpage
+
 \printbibliography
 
 \end{document} % конец документа
